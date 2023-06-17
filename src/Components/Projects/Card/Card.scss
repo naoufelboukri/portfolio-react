@@ -1,0 +1,64 @@
+@import '../../../Styles/utils';
+
+.Card {
+    @include flex(row, space-between);
+    position: relative;
+    padding: 2.5em;
+    background-color: #fff;
+    font-family: 'Poppins';
+    margin: 0 0 2em;
+    width: 100%;
+    .informations {
+        @include flex(column, space-between, flex-start);
+        gap: 2em;
+        width: 60%;
+
+        .tags {
+            color: $dark;
+            font-size: 1.2em;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            .link{
+                text-decoration: none;
+                color: $dark;
+                font-size: 2.5rem;
+                font-weight: 500;
+                letter-spacing: 3px;
+            } 
+        }
+
+        p {
+            color: $dark;
+            letter-spacing: 2px;
+        }
+
+        .git {
+            font-size: 2.5em;
+        }
+
+        @media screen and (max-width: $sm) {
+            width: 100%;
+            padding: 2em;
+        }
+    }
+
+    img {
+        margin: auto;
+        width: 20%;
+        min-width: 15%;
+        @media screen and (max-width: $sm) {
+            width: 30%;
+            margin: 1em;
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        @include flex(column-reverse, flex-start);
+        width: 100%;
+        padding: 1em;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../Styles/utils';
+
+footer {
+    @include flex(row, space-between);
+    padding: 2em 4em 3em;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    color: #fff;
+
+    .socialNetwork {
+        @include flex(row, flex-start);
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Poppins';
+        letter-spacing: 1px;
+    }
+}

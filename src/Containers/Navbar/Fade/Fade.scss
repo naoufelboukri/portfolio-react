@@ -1,0 +1,14 @@
+div {
+    z-index: 1;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    ul {
+        background-color: red;
+        li {
+            color: #fff;
+        }
+    }
+}

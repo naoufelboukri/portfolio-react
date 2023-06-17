@@ -1,0 +1,60 @@
+@import '../../Styles/utils';
+
+nav {
+    position: relative;
+    ul {
+        @include flex(row, flex-end);
+        gap: 2em;
+        transition: 500ms ease-in-out;
+        li {
+            list-style: none;
+            .link {
+                color: $muted;
+                text-decoration: none;
+                font-family: 'Roboto';
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                border-radius: 50px;
+                padding: 1em;
+                transition: 300ms ease-in-out;
+                &:hover {
+                    color: #000;
+                    background-color: #fff;
+                }
+            }
+        }
+        @media screen and (max-width: $sm) {
+            // @include flex(column, flex-end, flex-end);
+            // position: absolute;
+            // top: 150%;
+            // right: 0;
+            // // transform: translateY(-100%);
+            // background-color: red;
+            // overflow: hidden;
+            // li {
+            //     .link {
+            //         &:hover {
+            //             color: #fff;
+            //             background: none;
+            //         }
+            //     }
+            // }
+            display: none;
+        }
+    }
+
+    button {
+        display: none;
+        padding: 0.5em;
+        border: 1px solid #202020;
+        color: $muted;
+        border-radius: 5px;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+        @media screen and (max-width: $sm) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../Styles/utils';
+
+.Projects {
+    margin: 1em 20em;
+    @media screen and (max-width: $lg) {
+        margin: 1em 5em;
+    }
+}

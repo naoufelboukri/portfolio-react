@@ -1,0 +1,16 @@
+@import '../../Styles/utils';
+
+.Selected {
+    h2 {
+        text-transform: uppercase;
+        font-family: 'Poppins';
+        color: $muted;
+        letter-spacing: 3px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    hr {
+        margin: 0.5em 0 4em;
+        border-top: 3px double $muted;
+    }
+}
