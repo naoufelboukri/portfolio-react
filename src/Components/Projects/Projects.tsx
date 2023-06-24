@@ -14,7 +14,6 @@ function Projects() {
     return (
         <div className="Projects">
             <Selected>Selected projects</Selected>
-
             { cards }
         </div>
     )

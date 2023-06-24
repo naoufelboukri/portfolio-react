@@ -1,0 +1,18 @@
+.Badge{
+    position: absolute;
+    width: 95%;
+    right: 0;
+    top: 175px;
+    // transform: translate(2000px);
+    hr {
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.90);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    img {
+        position: absolute;
+        right: 200px;
+        top: 0px;
+        width: 120px;
+    }
+}

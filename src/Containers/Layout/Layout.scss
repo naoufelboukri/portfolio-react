@@ -1,11 +1,18 @@
 @import '../../Styles/utils';
 
 header {
+    width: 100%;
+    z-index: 999;
     @include flex(row, space-between);
     padding: 2em;
+    position: absolute;
     h1 {
         img {
             width: 3em;
         }
+    }
+
+    @media screen and (max-width: 1180px) {
+        position: relative;
     }
 }

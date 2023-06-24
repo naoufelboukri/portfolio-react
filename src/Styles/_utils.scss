@@ -8,3 +8,17 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+%button {
+    color: #000;
+    background-color: #fff;
+    padding: 1em 1.5em;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+    &:hover {
+        background-color: $yellow;
+        // color: #fff;
+    }
+}

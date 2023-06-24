@@ -1,0 +1,57 @@
+@import '../../../Styles/utils';
+
+.Presentation {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .content {
+        width: 50%;
+        h2 {
+            font-family: "bold" ;
+            font-size: 3em;
+            span {
+                color: $yellow;
+            }
+        }
+        .content-child {
+            margin: 2em 5em;
+            p {
+                // font-size: calc(0.5vw + 2vmin);
+                font-family: 'Roboto';
+                font-weight: 300;
+                line-height: 50px;
+                text-align: justify;
+                margin: 0 0 3em;
+                max-width: 600px;
+                span {
+                    color: $yellow;
+                    // font-size: calc(0.5vw + 3vmin);
+                    font-weight: 400;
+                }
+            }
+            a {
+                @extend %button;
+            }
+        }
+    }
+
+    img {
+        width: 30em;
+    }
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        gap: 5em;
+        .content {
+            .content-child {
+                margin: 0;
+            }
+        }
+        img {
+            width: 25em;
+        }
+    }
+}
+

@@ -1,5 +1,10 @@
 @import './Styles/utils.scss';
 
+@font-face {
+    font-family: "bold";
+    src: local("PostNoBillsColombo-Bold"), url("./Fonts/post-no-bills-colombo/PostNoBillsColombo-Bold.woff") format("truetype");
+}
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;

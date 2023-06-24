@@ -15,7 +15,7 @@ function Layout(props: any) {
                 <Navbar></Navbar>
             </header>
             <main>
-                
+                { props.children }
             </main>
             <Footer></Footer>
         </>
