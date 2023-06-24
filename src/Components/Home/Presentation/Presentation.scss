@@ -26,6 +26,7 @@
                 text-align: justify;
                 margin: 0 0 3em;
                 max-width: 600px;
+                min-width: 350px;
                 span {
                     color: $yellow;
                     // font-size: calc(0.5vw + 3vmin);
@@ -42,15 +43,18 @@
         width: 30em;
     }
     @media screen and (max-width: 1000px) {
+        height: 120vh;
+        padding: 5em 0;
         flex-direction: column;
         gap: 5em;
         .content {
+            width: 80%;
             .content-child {
                 margin: 0;
             }
         }
         img {
-            width: 25em;
+            width: 80%;
         }
     }
 }

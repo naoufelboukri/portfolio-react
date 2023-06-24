@@ -1,0 +1,30 @@
+@import '../../../../Styles/utils';
+
+.Card {
+    width: min-content;
+    img {
+        width: 42em;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        h3 {
+            color: #fff;
+            font-family: 'bold';
+            font-size: 2em;
+        }
+        span {
+            color: $yellow;
+            font-family: 'Poppins';
+        }
+    }
+
+    @media screen and (max-width: 886px) {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

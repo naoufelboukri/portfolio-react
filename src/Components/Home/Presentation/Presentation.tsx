@@ -7,7 +7,7 @@ import image from './Image.png';
 
 const Presentation = () => {
     return (
-        <div className='Presentation'>
+        <section className='Presentation'>
             <div className='content'>
                 <h2><FontAwesomeIcon icon={faArrowRight} /> Créons votre <span>site internet</span></h2>
                 <div className="content-child">
@@ -20,7 +20,7 @@ const Presentation = () => {
                 </div>
             </div>
             <img src={image} alt="sites" />
-        </div>
+        </section>
         )
 }
 
